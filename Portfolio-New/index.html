@@ -7,7 +7,7 @@
     <meta name="keywords" content="personal, portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    
+
     <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
 
     <!-- Stylesheets -->
@@ -24,13 +24,19 @@
     <link href="//fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <!-- Font icons -->
-    
+
     <link href="icon-fonts/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="icon-fonts/essential-regular-fonts/essential-icons.css" rel="stylesheet" />
-    <!--[if lt IE 9]>
-      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    [if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_OADacOUuEOTGosIKOprM4");
+        })();
+    </script>
 
 </head>
 <body>
@@ -288,43 +294,61 @@
                 <h2>GET IN TOUCH</h2>
                 <p></p>
     <!-- Contact Info -->
-            <div class="row">
-                <div class="col-md-offset-2 col-md-8 contact-information">
-                    <div class="col-md-4 col-sm-4 col-xs-12 contact-info wow fadeInUp" data-wow-delay="0.4s">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <p>Call me</p>
-                        <a href=”917-573-8521”>917-573-8521</a>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 contact-info wow fadeInUp" data-wow-delay="0.6s">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>5603 Wellsley Drive West<br />Greensboro, North Carolina 27407</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 contact-info wow fadeInUp" data-wow-delay="0.8s">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <p>Email me<br /><a href="mailto: douglas.campbell@wellstar360.com">douglas.campbell@wellstar360.com</a></p>
-                    </div>
-                </div> <!-- information end -->
-                <!--Contact Form-->
-                <!--<div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-delay="1s">
-                    <form class="col-md-12 contact-form" method="POST" action="mail.php">
-                        <div class="row">-->
-                            <!--Name-->
-                            <!--<div class="col-md-6">
-                                <input id="con_name" name="con_name" class="form-inp requie" type="text" placeholder="Name">
-                            </div>-->
-                            <!--Email-->
-                            <!--<div class="col-md-6">
-                                <input id="con_email" name="con_email" class="form-inp requie" type="text" placeholder="Email">
-                            </div>
-                            <div class="col-md-12">-->
-                                <!--Message-->
-                                <!--<textarea name="con_message" id="con_message" class="requie" placeholder="Message" rows="8"></textarea>
-                                <input id="con_submit" class="site-button" type="submit" value="SEND A MESSAGE">
-                            </div>
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8 contact-information">
+                        <div class="col-md-4 col-sm-4 col-xs-12 contact-info wow fadeInUp" data-wow-delay="0.4s">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>Call me</p>
+                            <a href=”917-573-8521”>917-573-8521</a>
                         </div>
-                    </form>
-                </div>--> <!-- contact form end -->
+                        <div class="col-md-4 col-sm-4 col-xs-12 contact-info wow fadeInUp" data-wow-delay="0.6s">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>5603 Wellsley Drive West<br />Greensboro, North Carolina 27407</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 contact-info wow fadeInUp" data-wow-delay="0.8s">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p>Email me<br /><a href="mailto: douglas.campbell@wellstar360.com">douglas.campbell@wellstar360.com</a></p>
+                        </div>
+                    </div> <!-- information end -->
+                    <!--Contact Form-->
+                    <!--var template_params = {
+                    "reply_to": "reply_to_value",
+                    "subject": "subject_value",
+                    "body": "body_value",
+                    "client_name": "client_name_value",
+                    "client_email": "client_email_value"
+                    }
+
+                    var service_id = "default_service";
+                    var template_id = "template_Mdopvi0M";
+                    emailjs.send(service_id, template_id, template_params);-->
+
+
+
+
+
+
+                    <!--<div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-delay="1s">
+        <form class="col-md-12 contact-form" method="POST" action="mail.php">
+            <div class="row">-->
+                    <!--Name-->
+                    <!--<div class="col-md-6">
+        <input id="con_name" name="con_name" class="form-inp requie" type="text" placeholder="Name">
+    </div>-->
+                    <!--Email-->
+                    <!--<div class="col-md-6">
+        <input id="con_email" name="con_email" class="form-inp requie" type="text" placeholder="Email">
+    </div>
+    <div class="col-md-12">-->
+                    <!--Message-->
+                    <!--<textarea name="con_message" id="con_message" class="requie" placeholder="Message" rows="8"></textarea>
+                    <input id="con_submit" class="site-button" type="submit" value="SEND A MESSAGE">
+                </div>
             </div>
+        </form>
+    </div>-->
+                    <!-- contact form end -->
+                </div>
         </div>
     </section>
     <footer>
