@@ -174,7 +174,6 @@
     <Content Include="toolbox2.png" />
     <Content Include="video-version.html" />
     <Content Include="Web.config" />
-    <Content Include="Wordpress.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
