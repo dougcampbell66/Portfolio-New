@@ -1240,7 +1240,7 @@ a.site-button{
 
 /*max Width 992px */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 3000px) {
 
     .home-content h1{
         font-size: 50px;
